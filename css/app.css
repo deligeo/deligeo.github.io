@@ -17,7 +17,7 @@ header {
   border-top-left-radius: 16px; /* use 4 pixel increments */
   border-top-right-radius: 16px;
   border: 3px solid #fff;
-  background: url('../assets/images/headerBkg.png');
+  background: url('../assets/images/top-pic.jpg');
   background-size: cover;
   background-position: center;
   font-family: 'Tiny5', sans-serif;
