@@ -7,16 +7,16 @@
 }
 body {
   background: #444;
-  padding: 25px 50px;
+  /*padding: 25px 50px;*/
   font-size: 1.6em;
   font-weight: 500;
 }
 header {
   width: 100%;
   height: 500px;
-  border-top-left-radius: 16px; /* use 4 pixel increments */
-  border-top-right-radius: 16px;
-  border: 3px solid #fff;
+  /*border-top-left-radius: 16px; /* use 4 pixel increments */
+  /*border-top-right-radius: 16px;
+  border: 3px solid #ffffff;*/
   background: url('../assets/images/top-pic.jpg');
   background-size: cover;
   background-position: center;
@@ -26,32 +26,55 @@ header {
   text-align: center;
   padding-top: 150px;
   font-size: 3em;
-  color: #fff;
+  color: #efeeb4;
   text-shadow: 2px 2px 7px #333;
 }
   header > p {
-    color: #0f0;
+    color: #309975;
     margin-top: -25px;
     background: rgba(255, 255, 255, .33);
   }
+
+  nav {
+    position: absolute; /* Position the nav absolutely */
+    top: 15px; /* Distance from the top */
+    right: 60px; /* Distance from the right */
+    /*background: rgba(0, 0, 0); /* Optional background for contrast */
+    padding: 5px; /* Padding around nav items */
+    border-radius: 5px; /* Rounded corners for the nav */
+}
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Space between links */
+    font-size: 20px;
+    font-weight: 600;
+}
+
 section {
   width: 100%;
   min-height: 300px;
   padding: 100px 50px;
-  border: 3px solid #fff;
+  /*border-top: 3px solid #fff;   /* Top border */
+  /*border-bottom: 3px solid #fff; /* Bottom border */
+  border-left: none;             /* No left border */
+  border-right: none;            /* No right border */
 }
 #aboutSection {
-  background: #fff;
+  background: #dad873;
   color: #333;
-  font-size: 1.2em;
+  font-size: 1em;
 }
   .fancyHeading {
     font-family: 'Tiny5', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
     margin-bottom: 20px;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
   }
+p{
+  margin-bottom: 20px;
+}
 /*
   #000 - black
   #f00 - red
@@ -60,35 +83,41 @@ section {
   #fff - white
 */
 #careerGoals {
-  background: #222;
+  background: #454d66;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
   padding-left: 100px;
 }
-#workSamples {
+#work {
   background: #fff;
   color: #333;
   text-align: center;
 }
   .thumbnail {
     width: 20%;
-    border: 3px solid #777;
-    border-radius: 16px;
+    border: 0.5px solid #3b2e2e;
+    /*border-radius: 16px;*/
     box-shadow: 2x 3px 5px #222;
+    margin: 10px;
   }
+
+  .thumbnail:hover {
+    transform: scale(1.05);
+}
+
 #contact {
-  background: #222;
+  background: #000;
   color: #fff;
   text-align: center;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
+  /*border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;*/
   font-size: 1.2em;
 }
   #contact > a:link {
     color: #fff;
   }
 footer {
-  text-align: right;
+  text-align: center;
   padding-right: 50px;
   padding-top: 10px;
   font-size: .9em;
