@@ -48,7 +48,7 @@ function typeLoop() {
 document.addEventListener("DOMContentLoaded", () => {
   typeLoop();
 
-  const paragraphText = `I’m Albert Isaac, a front-end developer with a background in DevOps and a passion for creating clean, responsive web interfaces. I have experience working with HTML, CSS, JavaScript, and PHP, always focusing on building intuitive and seamless user experiences. With a strong foundation in UI/UX design and tools like Adobe Photoshop and XD, I aim to bridge the gap between design and development to deliver well-crafted, functional websites.`;
+  const paragraphText = `I’m Delna George, a front-end developer with a background in DevOps and a passion for creating clean, responsive web interfaces. I have experience working with HTML, CSS, JavaScript, and PHP, always focusing on building intuitive and seamless user experiences. With a strong foundation in UI/UX design and tools like Adobe Photoshop and XD, I aim to bridge the gap between design and development to deliver well-crafted, functional websites.`;
 
   const aboutParagraph = document.getElementById('about-paragraph');
   let animated = false;
