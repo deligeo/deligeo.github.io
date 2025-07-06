@@ -79,10 +79,6 @@ document.addEventListener("DOMContentLoaded", () => {
   observer.observe(document.getElementById('about'));
 });
 
-
-
-
-
 // Tab switching logic for Skills
 document.querySelectorAll('.tab-button').forEach(button => {
   button.addEventListener('click', () => {
