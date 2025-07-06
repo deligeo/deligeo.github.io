@@ -1,68 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/app.css">
-  <title>My Profile</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Albert Isaac | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <h2 style="margin-bottom: 20px;">Delna G</h2>
-    <p>Front end Developer</p>
-    <nav>
-      <a href="#aboutSection">About</a>
-      <a href="#careerGoals">Career Goals</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
-  </nav>
+    <div class="logo">
+      <img src="assets/images/light_Logo.png" alt="Delna Logo" />
+    </div>
+    <nav class="hamburger-menu">
+      <div class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul id="menu" class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <section id="aboutSection">
-    <h1 class="fancyHeading">My Journey in Tech</h1>
-    <p>Hello! I’m Delna G, a passionate individual with a background in B Tech, now diving into the world of frontend development. My journey into tech began with a fascination for how things work behind the scenes, and it has evolved into a deep commitment to creating seamless and engaging user experiences.</p>
-    <p>I’m currently focused on honing my skills in Adobe XD, HTML, CSS, and JavaScript, and I enjoy exploring frameworks like React. I believe that good design goes hand-in-hand with functionality, and I’m always looking for ways to enhance the usability and aesthetic of the projects I work on.</p>
-    <p>Thank you for visiting my site! I’m looking forward to the opportunities that lie ahead and am always open to new connections and projects. Let’s create something amazing together!</p>
-  </section>
-  <section id="careerGoals">
-    <h1 class="fancyHeading">My Career Goals</h1>
-    <ul>
-      <li><strong>Enhance Technical Skills</strong> <br/>Deepen my knowledge of HTML, CSS, and JavaScript through continuous learning and practical projects.</li><br/>
-      <li><strong>Networking and Job Applications</strong> <br/>Attend industry meetups and apply to multiple junior front-end developer positions each week.</li><br/>
-      <li><strong>Prepare for Interviews</strong> <br/>Practice coding challenges regularly and review common front-end interview questions.</li><br/>
-      <li><strong>Stay Updated on Industry Trends</strong> <br/>Follow emerging technologies and best practices in front-end development to maintain a competitive edge.</li><br/>
-      <li><strong>Focus on UI/UX Principles</strong> <br/>Strengthen my understanding of user interface and user experience design to create intuitive web applications.</li><br/>
-      <li><strong>Work on Personal Projects:</strong> <br/>Develop personal projects to apply my skills and showcase my capabilities to potential employers.</li>
-  </ul>
-  </section>
-  <section id="work">
-    <h1 class="fancyHeading" style="text-align: left; padding-left: 100px;">My Work Samples</h1>
-    <a href="assets/images/work1.png" target="_blank">
-        <img src="assets/images/work1.png" alt="logo 1" class="thumbnail">
-    </a>
-    <a href="assets/images/work2.png" target="_blank">
-        <img src="assets/images/work2.png" alt="logo 2" class="thumbnail">
-    </a>
-    <a href="assets/images/work3.png" target="_blank">
-        <img src="assets/images/work3.png" alt="logo 3" class="thumbnail">
-    </a>
+  
+
+  <!-- Hero Section -->
+  <div class="main-container">
+    <div class="left">
+      <h1>I am Delna George</h1>
+      <h2 class="typed-wrapper"><span id="typed-text"></span></h2>
+      <p class="subtext">
+        Turning ideas into interactive, responsive web experiences using code and creativity.
+      </p>
+      <a href="#contact" class="cta-button">Contact Me</a>
+    </div>
+    <div class="right">
+      <img src="assets/images/image.png" alt="Delna" />
+    </div>
+  </div>
+
+
+
+
+  <!-- About Section -->
+<!-- About Section -->
+<section id="about" class="about-section">
+  <h1 class="section-title">ABOUT ME</h1>
+  <div class="about-container">
+    
+    <!-- Left: About Me -->
+    <div class="about-left">
+      <h2 id="abth2">Get to Know Me</h2>
+      <p>
+        I’m Delna George, a Web developer with a background in DevOps and a passion for creating clean, responsive web interfaces. I specialize in HTML, CSS, JavaScript, and PHP, always focusing on user-friendly design and functionality. I also bring strong UI/UX design skills with tools like Adobe Photoshop and XD.
+      </p>
+    </div>
+
+    <!-- Right: Skills Tabs -->
+    <div class="about-right">
+      <h2 id="abth2">Skills</h2>
+
+      <div class="skills-tabs">
+        <button class="tab-button active" data-tab="web">Web Development</button>
+        <button class="tab-button" data-tab="devops">DevOps</button>
+      </div>
+
+      <div class="skills-content">
+        <div class="skills-tab-content active" id="web">
+          <ul class="skills-list">
+            <li><img src="assets/images/html5.png" alt="HTML5 icon" class="inline-icon" /> HTML5</li>
+            <li><img src="assets/images/css.png" alt="CSS icon" class="inline-icon" /> CSS</li>
+            <li><img src="assets/images/javascript.png" alt="Javascript icon" class="inline-icon" /> Javascript</li>
+            <li><img src="assets/images/php.png" alt="PHP icon" class="inline-icon" /> PHP</li>
+            <li><img src="assets/images/wordpress.png" alt="WordPress icon" class="inline-icon" /> WordPress</li>
+            <li><img src="assets/images/photoshop.png" alt="Adobe Photoshop icon" class="inline-icon" /> Adobe Photoshop</li>
+            <li><img src="assets/images/xd.png" alt="Adobe XD icon" class="inline-icon" /> Adobe XD</li>
+            <li><img src="assets/images/illustrator.png" alt="Adobe Illustrator icon" class="inline-icon" /> Adobe Illustrator</li>
+            <li><img src="assets/images/git.png" alt="Git icon" class="inline-icon" /> Git</li>
+            <li><img src="assets/images/github.png" alt="GitHub icon" class="inline-icon" /> GitHub</li>
+            <li><img src="assets/images/gitlab.png" alt="GitLab icon" class="inline-icon" /> GitLab</li>
+          </ul>
+        </div>
+
+        <div class="skills-tab-content" id="devops">
+          <ul class="skills-list">
+            <li><img src="assets/images/jenkins.png" alt="Jenkins icon" class="inline-icon" /> Jenkins</li>
+            <li><img src="assets/images/docker.png" alt="Docker icon" class="inline-icon" /> Docker</li>
+            <li><img src="assets/images/kubernetes.png" alt="Kubernetes icon" class="inline-icon" /> Kubernetes</li>
+            <li><img src="assets/images/aws.png" alt="AWS icon" class="inline-icon" /> Amazon Web Services</li>
+            <li><img src="assets/images/azure.png" alt="Azure icon" class="inline-icon" /> Microsoft Azure</li>
+            <li><img src="assets/images/shell.png" alt="Shell icon" class="inline-icon" /> Shell Scripting</li>
+            <li><img src="assets/images/python.png" alt="Python icon" class="inline-icon" /> Python</li>
+            <li><img src="assets/images/datadog.png" alt="Datadog icon" class="inline-icon" /> Datadog</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-  <section id="contact">
-    <h1 class="fancyHeading">Contact Me</h1>
-    <a href="https://github.com/deligeo/" target="_blank">
-      <img src="assets/images/github-logo.png" alt="GitHub" style="width: 70px; height: auto;">
-    </a>
-    <a href="https://www.twitter.com/deli_geo7" target="_blank">
-      <img src="assets/images/twitter-logo.jpg" alt="twitter" style="width: 70px; height: auto;">
-    </a>
-    <a href="mailto:delna@hotmail.com" target="_blank">
-      <img src="assets/images/email-png.png" alt="twitter" style="width: 70px; height: auto;">
-    </a><br>
+
+
+
+
+  <!-- About Section -->
+<!-- 
+
+
+  <section id="about" class="about-section">
+    <h2 class="headings">ABOUT ME</h2>
+    <p id="about-paragraph" class="about-paragraph"></p>
   </section>
-  <footer>
-    <p>&copy; 2024 Delna, all rights reserved.</p>
-  </footer>
+
+
+
+   -->
+
+
+  <!-- Skills Section -->
+<!-- 
+
+
+  <section id="skills" class="skills-section">
+    <h2 class="headings">SKILLS</h2>
+    <div class="skills-tabs">
+      <button class="tab-button active" data-tab="web">Web Development</button>
+      <button class="tab-button" data-tab="devops">DevOps</button>
+    </div>
+
+    <div class="skills-content">
+      <div class="skills-tab-content active" id="web">
+        <ul class="skills-list">
+          <li><img src="html5.png" alt="HTML5 icon" class="inline-icon" /> HTML5</li>
+          <li><img src="css.png" alt="CSS icon" class="inline-icon" /> CSS</li>
+          <li><img src="javascript.png" alt="Javascript icon" class="inline-icon" /> Javascript</li>
+          <li><img src="php.png" alt="PHP icon" class="inline-icon" /> PHP</li>
+          <li><img src="wordpress.png" alt="WordPress icon" class="inline-icon" /> WordPress</li>
+          <li><img src="photoshop.png" alt="Adobe Photoshop icon" class="inline-icon" /> Adobe Photoshop</li>
+          <li><img src="xd.png" alt="Adobe XD icon" class="inline-icon" /> Adobe XD</li>
+          <li><img src="illustrator.png" alt="Adobe Illustrator icon" class="inline-icon" /> Adobe Illustrator</li>
+          <li><img src="git.png" alt="Git icon" class="inline-icon" /> Git</li>
+          <li><img src="github.png" alt="GitHub icon" class="inline-icon" /> GitHub</li>
+          <li><img src="gitlab.png" alt="GitLab icon" class="inline-icon" /> GitLab</li>
+        </ul>
+      </div>
+
+      <div class="skills-tab-content" id="devops">
+        <ul class="skills-list">
+          <li><img src="jenkins.png" alt="Jenkins icon" class="inline-icon" /> Jenkins</li>
+          <li><img src="docker.png" alt="Docker icon" class="inline-icon" /> Docker</li>
+          <li><img src="kubernetes.png" alt="Kubernetes icon" class="inline-icon" /> Kubernetes</li>
+          <li><img src="aws.png" alt="AWS icon" class="inline-icon" /> Amazon Web Services</li>
+          <li><img src="azure.png" alt="Azure icon" class="inline-icon" /> Microsoft Azure</li>
+          <li><img src="shell.png" alt="Shell icon" class="inline-icon" /> Shell Scripting</li>
+          <li><img src="python.png" alt="Python icon" class="inline-icon" /> Python</li>
+          <li><img src="datadog.png" alt="Datadog icon" class="inline-icon" /> Datadog</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+ -->
+
+
+  <section id="contact" class="contact-section">
+    <h2 class="headings">CONTACT ME</h2>
+    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p class="contact-social-text">
+      Let’s connect on:
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>,
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </p>
+
+    <hr class="footer-divider" />
+
+    <div class="footer-logo-wrapper">
+      <img src="assets/images/light_Logo.png" alt="Footer Logo" class="footer-logo" />
+    </div>
+  </section>
+
+  
+
+
+
+
+
+  <script src="scripts/app.js"></script>
 </body>
 </html>
