@@ -4,117 +4,202 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Delna George | Portfolio</title>
-  <link rel="icon" href="assets/images/light_Logo.png" sizes="64x64" type="image/png">
+  <link rel="icon" href="assets/images/favicon.png" sizes="64x64" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
 
 
-  <header>
-    <div class="logo">
-      <img src="assets/images/light_Logo.png" alt="Delna Logo" />
+<!-- HEADER -->
+
+<header>
+  <div class="logo">
+    <img src="assets/images/light_Logo.png" alt="Delna Logo" />
+  </div>
+  <nav class="hamburger-menu">
+    <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
-    <nav class="hamburger-menu">
-      <div class="hamburger" onclick="toggleMenu()">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <ul id="menu" class="menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- MAIN -->
+
+<div class="main-container">
+  <div class="left">
+    <h1>I am Delna George</h1>
+    <h2 class="typed-wrapper"><span id="typed-text"></span></h2>
+    <p class="subtext">
+      Turning ideas into interactive, responsive web experiences using code and creativity.
+    </p>
+    <a href="#contact" class="cta-button">Contact Me</a>
+  </div>
+  <div class="right">
+    <img src="assets/images/image.png" alt="Delna" />
+  </div>
+</div>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="about-section">
+  <h1 class="section-title">ABOUT ME</h1>
+  <div class="about-container">
+    <div class="about-left">
+      <h2 class="about-heading">Get to Know Me</h2>
+      <p id="about-paragraph" class="about-paragraph">I’m Steffy David, a front-end developer with a background in DevOps and a passion for creating clean, responsive web interfaces. I have experience working with HTML, CSS, JavaScript, and PHP, always focusing on building intuitive and seamless user experiences. With a strong foundation in UI/UX design and tools like Adobe Photoshop and XD, I aim to bridge the gap between design and development to deliver well-crafted, functional websites.</p>
+    </div>
+
+    <div class="about-right">
+      <h2 class="about-heading">Skills</h2>
+
+      <div class="skills-tabs">
+        <button class="tab-button active" data-tab="web">Web Development</button>
+        <button class="tab-button" data-tab="devops">DevOps</button>
       </div>
-      <ul id="menu" class="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
 
+      <div class="skills-content">
+        <div class="skills-tab-content active" id="web">
+          <ul class="skills-list">
+            <li><img src="assets/images/html5.png" alt="HTML5 icon" class="inline-icon" /> HTML5</li>
+            <li><img src="assets/images/css.png" alt="CSS icon" class="inline-icon" /> CSS</li>
+            <li><img src="assets/images/javascript.png" alt="Javascript icon" class="inline-icon" /> Javascript</li>
+            <li><img src="assets/images/php.png" alt="PHP icon" class="inline-icon" /> PHP</li>
+            <li><img src="assets/images/wordpress.png" alt="WordPress icon" class="inline-icon" /> WordPress</li>
+            <li><img src="assets/images/photoshop.png" alt="Adobe Photoshop icon" class="inline-icon" /> Adobe Photoshop</li>
+            <li><img src="assets/images/xd.png" alt="Adobe XD icon" class="inline-icon" /> Adobe XD</li>
+            <li><img src="assets/images/illustrator.png" alt="Adobe Illustrator icon" class="inline-icon" /> Adobe Illustrator</li>
+            <li><img src="assets/images/git.png" alt="Git icon" class="inline-icon" /> Git</li>
+            <li><img src="assets/images/github.png" alt="GitHub icon" class="inline-icon" /> GitHub</li>
+            <li><img src="assets/images/gitlab.png" alt="GitLab icon" class="inline-icon" /> GitLab</li>
+          </ul>
+        </div>
 
-  <div class="main-container">
-    <div class="left">
-      <h1>I am Delna George</h1>
-      <h2 class="typed-wrapper"><span id="typed-text"></span></h2>
-      <p class="subtext">
-        Turning ideas into interactive, responsive web experiences using code and creativity.
-      </p>
-      <a href="#contact" class="cta-button">Contact Me</a>
-    </div>
-    <div class="right">
-      <img src="assets/images/image.png" alt="Delna" />
+        <div class="skills-tab-content" id="devops">
+          <ul class="skills-list">
+            <li><img src="assets/images/jenkins.png" alt="Jenkins icon" class="inline-icon" /> Jenkins</li>
+            <li><img src="assets/images/docker.png" alt="Docker icon" class="inline-icon" /> Docker</li>
+            <li><img src="assets/images/kubernetes.png" alt="Kubernetes icon" class="inline-icon" /> Kubernetes</li>
+            <li><img src="assets/images/aws.png" alt="AWS icon" class="inline-icon" /> Amazon Web Services</li>
+            <li><img src="assets/images/azure.png" alt="Azure icon" class="inline-icon" /> Microsoft Azure</li>
+            <li><img src="assets/images/shell.png" alt="Shell icon" class="inline-icon" /> Shell Scripting</li>
+            <li><img src="assets/images/python.png" alt="Python icon" class="inline-icon" /> Python</li>
+            <li><img src="assets/images/datadog.png" alt="Datadog icon" class="inline-icon" /> Datadog</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
 
+<!-- PROJECTS -->
 
-  <section id="about" class="about-section">
-    <h1 class="section-title">ABOUT ME</h1>
-    <div class="about-container">
+<section id="projects" class="project-section">
+  <h1 class="section-title">PROJECTS</h1>
+  
+  <div class="project-container">
+    <button id="left-arrow" disabled aria-label="Previous Projects">&lt;</button>
+
+    <div class="projects-wrapper">
+      <div class="project-card" id="projectA">
+        <h2 class="project-title">Skate Soul</h2>
+        <img src="./assets/images/XD1.png" alt="Skate Soul" />
+        <p>Designed a brand storytelling and order placement interface for Skate Soul, a community-driven skateboarding brand focused on culture, sustainability, and self-expression.
+        </p>
+        <p>Tools used: Adobe XD</p>
+        <button class="view-more" onclick="window.open('https://xd.adobe.com/view/46e19f02-cc4c-4acf-b761-740922ba70dd-13b2/?fullscreen', '_blank')">View More</button>
+      </div>
       
-      <div class="about-left">
-        <h2 id="abth2">Get to Know Me</h2>
-        <p id="about-paragraph" class="about-paragraph"></p>
+      <div class="project-card" id="projectB">
+        <h2 class="project-title">Star Wars</h2>
+        <img src="./assets/images/XD2.png" alt="Star Wars" />
+        <p>Created a Star Wars movie browsing page with a clean, scrollable layout. Users can browse and view the list of movies in the franchise.</p>
+        <p>Tools used: Adobe XD</p>
+        <button class="view-more" onclick="window.open('https://xd.adobe.com/view/db8c76e2-32e1-495d-8805-3df28e512bb9-8edf/?fullscreen', '_blank')">View More</button>
       </div>
 
-      <div class="about-right">
-        <h2 id="abth2">Skills</h2>
+      <div class="project-card" id="projectC">
+        <h2 class="project-title">Haven & Home</h2>
+        <img src="./assets/images/XD3.png" alt="Haven & Home" />
+        <p>Designed a seamless mobile experience that reflects Haven & Home’s blend of style and comfort.</p>
+        <p>Tools used: Adobe XD</p>
+        <button class="view-more" onclick="window.open('https://xd.adobe.com/view/4669d9d6-a517-4e75-8f91-32ace4c6bcd6-133a?fullscreen', '_blank')">View More</button>
+      </div>
 
-        <div class="skills-tabs">
-          <button class="tab-button active" data-tab="web">Web Development</button>
-          <button class="tab-button" data-tab="devops">DevOps</button>
-        </div>
+      <div class="project-card" id="projectD">
+        <h2 class="project-title">Romely</h2>
+        <img src="./assets/images/WP1.png" alt="Star Wars" />
+        <p>Created a simple website for Touring to showcase their travel services. It’s easy to navigate and book trips.</p>
+        <p>Tools used: WordPress</p>
+        <button class="view-more" onclick="window.open('https://newsamplesite9.wordpress.com/', '_blank')">View More</button>
+      </div>
+      
+      <div class="project-card" id="projectE">
+        <h2 class="project-title">Celestial View</h2>
+        <img src="assets/images/Observatory.png" alt="Celestial View" />
+        <p>Createda space-themed scene from an observatory, featuring planets, stars, spacecraft, astronauts, and aliens, capturing the wonder of space.</p>
+        <p>Tools used: Adobe Illustrator</p>
+        <button
+          class="view-more"
+          onclick="openLightbox(this)"
+          data-images='["assets/images/Observatory.png"]'>
+          View More
+        </button>
+      </div>
 
-        <div class="skills-content">
-          <div class="skills-tab-content active" id="web">
-            <ul class="skills-list">
-              <li><img src="assets/images/html5.png" alt="HTML5 icon" class="inline-icon" /> HTML5</li>
-              <li><img src="assets/images/css.png" alt="CSS icon" class="inline-icon" /> CSS</li>
-              <li><img src="assets/images/javascript.png" alt="Javascript icon" class="inline-icon" /> Javascript</li>
-              <li><img src="assets/images/php.png" alt="PHP icon" class="inline-icon" /> PHP</li>
-              <li><img src="assets/images/wordpress.png" alt="WordPress icon" class="inline-icon" /> WordPress</li>
-              <li><img src="assets/images/photoshop.png" alt="Adobe Photoshop icon" class="inline-icon" /> Adobe Photoshop</li>
-              <li><img src="assets/images/xd.png" alt="Adobe XD icon" class="inline-icon" /> Adobe XD</li>
-              <li><img src="assets/images/illustrator.png" alt="Adobe Illustrator icon" class="inline-icon" /> Adobe Illustrator</li>
-              <li><img src="assets/images/git.png" alt="Git icon" class="inline-icon" /> Git</li>
-              <li><img src="assets/images/github.png" alt="GitHub icon" class="inline-icon" /> GitHub</li>
-              <li><img src="assets/images/gitlab.png" alt="GitLab icon" class="inline-icon" /> GitLab</li>
-            </ul>
-          </div>
-
-          <div class="skills-tab-content" id="devops">
-            <ul class="skills-list">
-              <li><img src="assets/images/jenkins.png" alt="Jenkins icon" class="inline-icon" /> Jenkins</li>
-              <li><img src="assets/images/docker.png" alt="Docker icon" class="inline-icon" /> Docker</li>
-              <li><img src="assets/images/kubernetes.png" alt="Kubernetes icon" class="inline-icon" /> Kubernetes</li>
-              <li><img src="assets/images/aws.png" alt="AWS icon" class="inline-icon" /> Amazon Web Services</li>
-              <li><img src="assets/images/azure.png" alt="Azure icon" class="inline-icon" /> Microsoft Azure</li>
-              <li><img src="assets/images/shell.png" alt="Shell icon" class="inline-icon" /> Shell Scripting</li>
-              <li><img src="assets/images/python.png" alt="Python icon" class="inline-icon" /> Python</li>
-              <li><img src="assets/images/datadog.png" alt="Datadog icon" class="inline-icon" /> Datadog</li>
-            </ul>
-          </div>
-        </div>
+      <div class="project-card" id="projectF">
+        <h2 class="project-title">Echoes of Art</h2>
+        <img src="assets/images/Echoes_.png" alt="Echoes of Art" />
+        <p>I created a website for Echoes of Art to showcase contemporary exhibitions, feature emerging artists, and share news and events related to their mission.</p>
+        <p>Tools used: HTML, CSS, JavaScript</p>
+        <button
+          class="view-more"
+          onclick="openLightbox(this)"
+          data-images='["assets/images/Echoes1.png", "assets/images/Echoes2.png", "assets/images/Echoes3.png", "assets/images/Echoes4.png", "assets/images/Echoes5.png", "assets/images/Echoes6.png"]'>
+          View More
+        </button>
       </div>
     </div>
-  </section>
 
-  <section id="projects">
-    <h2 class="headings">PROJECTS</h2>
-  </section>
+    <button id="right-arrow" aria-label="Next Projects">&gt;</button>
+  </div>
+  <div class="arrow-buttons-wrapper mobile-arrows">
+    <button id="left-arrow-mobile" disabled aria-label="Previous Projects">&lt;</button>
+    <button id="right-arrow-mobile" aria-label="Next Projects">&gt;</button>
+  </div>
+</section>
 
-  <section id="contact" class="contact-section">
-    <h2 class="headings">CONTACT ME</h2>
-    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <button id="prev-btn" onclick="event.stopPropagation(); showPrevImage()">←</button>
+  <img id="lightbox-img" src="" alt="Full-size image" />
+  <button id="next-btn" onclick="event.stopPropagation(); showNextImage()">→</button>
+</div>
+
+
+<!-- CONTACTS -->
+
+<section id="contact" class="contact-section">
+  <h1 class="section-title">CONTACT ME</h1>
+    <form class="contact-form" id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-
     <p class="contact-social-text">
-      Let’s connect on:
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>,
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      Let’s connect via: 
+      <a href="mailto:your@email.com" class="no-link-style">
+        <img src="assets/images/email.svg" alt="Email" style="width:16px; height:16px; vertical-align:middle; margin-right:5px;color: #fff;">Email</a>
     </p>
 
     <hr class="footer-divider" />
@@ -124,7 +209,7 @@
     </div>
   </section>
 
-  
   <script src="scripts/app.js"></script>
+
 </body>
 </html>
